@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    background-color: red;
+}
+body {
+    background-color: rgb(83, 82, 82);
+}
+header {
+    display: flex;
+    align-items: center;
+}
+header h2 {
+    font-size: 300%;
+}
+header img {
+    max-width: 300px;
+    padding: 1em;
+}
