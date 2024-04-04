@@ -8,15 +8,83 @@ html {
 }
 body {
     background-color: rgb(83, 82, 82);
+    max-width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
 }
 header {
     display: flex;
     align-items: center;
+    width: 100vw;
+    border-bottom: 2px ridge red;
+    margin-bottom: 50px;
 }
 header h2 {
     font-size: 300%;
 }
 header img {
-    max-width: 300px;
+    max-width: 250px;
     padding: 1em;
+}
+
+
+nav {
+    flex-basis: 25%;
+}
+nav ul {
+    position: sticky;
+    top: 50px;
+    list-style-type: none;
+    width: 80%;
+    margin: 0 auto;
+}
+nav li + nav li {
+    margin-top: .5em;
+}
+nav a {
+    display: block;
+    background-color: red;
+    border-radius: 10px;
+    padding: 1em .5em;
+    text-decoration: none;
+    font-size: 120%;
+    font-weight: bold;
+    color: white;
+    border: 2px ridge red;
+    transition: all ease-in-out 300ms;
+}
+nav a:hover {
+    background-color: black;
+    color: red;
+}
+section {
+    flex-basis: 75%;
+}
+article {
+    max-width: 800px;
+    min-width: 600px;
+}
+article + article {
+    margin-top: 1em;
+}
+/* Video Formatting */
+.videowrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    padding-top: 25px;
+    height: 0;
+    margin: 0 auto;
+    border: 6px ridge #808080;
+}
+.videowrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+footer {
+    width: 100vw;
 }
