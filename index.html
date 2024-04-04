@@ -3,8 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Font Links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+
+
     <title>Van Halen Video Gallery</title>
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 </head>
 <body>
     <header>
@@ -13,8 +21,8 @@
     </header>
     <nav>
         <ul>
-            <li><a href="#vid1">Video 1</a></li>
-            <li></li>
+            <li><a href="#vid1">Panama</a></li>
+            <li><a href="#vid2">Hot For Teacher</a></li>
             <li></li>
             <li></li>
             <li></li>
@@ -24,14 +32,19 @@
 
             <section>
             <article id="vid1">
-                <h4></h4>
+                <h4>Panama</h4>
                 <div class="videowrapper"><iframe src="https://www.youtube.com/embed/1YqOXtcn8fs?si=GYv1i_goAqMzfrVM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
-                <div class="caption"></div>
+                <div class="caption">live at the Sydney Entertainment Centre, Sydney, Australia 04/20/1998 featuring Gary Cherone (ex Extreme) on vocals</div>
             </article>
             <article id="vid2">
-                <h4></h4>
+                <h4>Hot For Teacher</h4>
                 <div class="videowrapper"><iframe src="https://www.youtube.com/embed/CaPlKTFnXz4?list=PLXq29cd_4g9NTNW8YWX1Lc0cxL_GNkhD2" title="Van Halen - Hot For Teacher Live 1984" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
-                <div class="caption"></div>
+                <div class="caption">Van Halen <br>
+                    Castle Donington Park<br>
+                    Castle Donington, England<br>
+                    1984-08-18<br>
+                    <br>
+                    Hot For Teacher</div>
             </article>
             <article id="vid3">
                 <h4></h4>
@@ -50,6 +63,7 @@
             </article>
         </section>
     </main>
+    <div><button onclick="topFunction()" id="cornerBtn" title="Go to top">Return To Top</button></div>
     <footer>
         <p>&copy;<span id="copyright"></span> Michael Roberts Productions</p>
     </footer>
